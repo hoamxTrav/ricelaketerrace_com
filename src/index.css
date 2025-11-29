@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: ensure emoji-friendly system font stack */
+:root {
+  --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+              "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+              "Segoe UI Symbol", sans-serif;
+}
+html, body, #root { height: 100%; }
+body { font-family: var(--app-font); }
