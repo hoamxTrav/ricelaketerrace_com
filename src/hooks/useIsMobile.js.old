@@ -1,0 +1,14 @@
+import { useEffect, useState } from "react";
+
+export default function useIsMobile(maxWidth = 768) {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    if (typeof window === "undefined" || !("matchMedia" in window)) return;
+    const mql = window.matchMedia(`(max-width: ${maxWidth}px)`);
+    const update = () => setMobile(mql.matches);
+    update();
+    mql.addEventListener?.("change", update);
+    return () => mql.removeEventListener?.("change", update);
+  }, [maxWidth]);
+  return mobile;
+}
