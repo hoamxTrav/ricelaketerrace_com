@@ -89,7 +89,7 @@ export default function App() {
                     {/* Your presentational header; if you want the sentiment emoji here,
               add it inside ChatHeader later. */}
                     <h1 className="text-center text-xl md:text-2xl font-bold text-charcoal">
-                        Rice Lake Communications Hub &nbsp; <span className="align-middle text-2xl md:text-3xl">{headerEmoji}</span>
+                        Rice Lake Comm Hub &nbsp; <span className="align-middle text-2xl md:text-3xl">{headerEmoji}</span>
                     </h1>
                     {/* Or: <ChatHeader /> if you prefer the rotating emoji/header */}
                 </div>
@@ -172,3 +172,4 @@ export default function App() {
         </div>
     );
 }
+
