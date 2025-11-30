@@ -19,7 +19,7 @@ export default {
         cloud:    '#D9D9D9',
       },
       backgroundImage: {
-        'hoa-wide': 'url("public/rltta-bg.jpg")', // put the file at: public/rltta-bg.jpg
+        'hoa-wide': 'url("rltta-bg.jpg")', // put the file at: public/rltta-bg.jpg
       },
     },
   },
